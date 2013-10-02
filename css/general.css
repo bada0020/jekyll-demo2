@@ -1,11 +1,11 @@
 html {
-	background-color: #ccc;
-	font: normal 100%/1.4 Georgia, serif;
+  background-color: #ccc;
+  font: normal 100%/1.4 Georgia,serif;
 }
 
 body {
-	margin: 2em auto; 
-	padding: 1eml; 
-	width: 24em;
-	background-color:#fff;
+  margin: 2em auto;
+  width: 25em;
+  background-color: #666;
+  border-radius:6px;
 }
