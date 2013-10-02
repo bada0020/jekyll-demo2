@@ -2,34 +2,26 @@
 layout: default
 ---
 
+<html lang=en-ca>
+<head>
+	<meta charset=utf-8 />
+	<title> My webstie </title>
+	<link href="css/general.css" rel="stylesheet">
+	
+</head>
+<body>
+	<h1>My Portfoilio</h1>
+	<p> This website is super amazing</p>
+	
+	<div class ="portfolio">
+		<imag src="img/work-1">
+		<imag src="img/work-1">
+		<imag src="img/work-1">
+	</div>
+	
+	<script src="portfolio.js"></script>
+	</body>
+	</head>
+	</html>
 
-<h1> Dinosaurs </h1>
-<p> Dinosaurs are super rockin'! </p>
-
-<h2> Herbivores</h2>
-<ul>
-	{% for dino in site.pages %}
-		{% if dino.category == "herbivore" %}
-			<li> {{dino.name}}</li>
-				<li>
-			<figure>
-			<img src="{{dino.thumb}}" alt="">
-			<figcaption>{{dino.name}}</figcaption>
-			</figure>
-			</li>
-			
-		{% endif %}
-	{% endfor %}
-	
-	</ul>
-	
-	<h3>Carnivours</h3>
-	
-	<ul>
-	{% for dino in site.pages %}
-		{% if dino.category == "carnivore" %}
-			<li> {{dino.name}}</li>
-		{% endif %}
-	{% endfor %}
-	
-	</ul>
+		
