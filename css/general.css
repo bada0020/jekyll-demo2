@@ -1,11 +1,246 @@
-html {
-  background-color: #ccc;
-  font: normal 100%/1.4 Georgia,serif;
-}
 
 body {
-  margin: 2em auto;
-  width: 25em;
-  background-color: #666;
-  border-radius:6px;
+	background-image:url(../images/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-width: 768px;
+	font-family: 'Roboto Condensed', sans-serif, cursive;
+	line-height: 1.5rem;
+	font-size: 100%;
+	background-color: #000;
 }
+
+p {
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+img {
+	width: 100%;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* --------------------------------------------------------------------- Masthead */
+
+.masthead {
+	height: 4.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100; /* Puts this element on top of the rest */
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 6rem;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	z-index: 100;
+	margin-top: 15px;
+}
+
+nav {
+	width: 100%;
+	height: 5rem;
+	position:absolute;
+	top: 1.5rem;
+	background-color: #BE1E2D;
+}
+
+nav ul {
+	text-align: center;	
+	padding-left: 3%;
+}
+
+nav li {
+	display: inline;	
+}
+
+nav a {
+	display: inline-block;
+	margin: 0 1%;
+	padding: 1rem 0;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.about {
+	margin-right: 10%;
+}
+
+/* --------------------------------------------------------------------- Content */
+
+.wrapper {
+	overflow: hidden; /* Will wrap around its children when they float */ 
+	padding-top: 4.5rem;
+}
+
+#home,
+#aboutme,
+#portfolio,
+#contact {
+	clear: both;   /* Will stack after each other if their children have floats */
+	padding: 6rem 10.75%;
+	overflow: hidden;
+
+}
+
+/*-------------------------------------------------------------------- Home Page */
+
+#home {
+	height: 40rem;
+}
+
+.qoute {
+	font-size: 3.125rem;
+	margin-top: 10rem;
+	margin-bottom: 1rem;
+	margin-left: 18%;
+	text-align: center;
+	font-family: Roboto Condensed, sans-serif, cursive; 
+	width: 65%; 
+	line-height: 3rem;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+h2 + p {
+	color: #FFF;
+	text-align: right;
+	width: 60%;
+	margin-left: 18%;
+	margin-right: 5%;
+	text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------- About */
+
+#aboutme {
+	background-color: #FFCCCC;
+	padding: 3% 10.75%;
+}
+
+h1 {
+	font-size: 3.125rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-family: Roboto Condensed, sans-serif, cursive;
+	margin-top: 4.2rem; 
+	text-transform: uppercase;
+}
+
+h1 + hr {
+	margin: 0;
+	border: 0;
+	margin-bottom: 2.4rem;
+	border-bottom: 2px solid #000;
+}
+
+
+#aboutme img {
+	width: 30%;
+	background-color: #666;
+	margin-right: 5%;
+	float: left;
+	margin-bottom: 2rem;
+}
+
+/*------------------------------------------------------------------- Portfolio */
+
+#portfolio {
+	background-color: #FFF;
+	padding: 6rem 10.75%;
+}
+
+.artwork {
+	width: 30%;
+	margin-right: 4%;
+	float:left;
+	margin-bottom: 3.5rem;
+}
+
+.artwork:nth-child(3n+3) { /* Every 3rd div will have these proprties */ 
+	margin-right: 0;
+}
+	
+
+h4 {
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h3 + hr {
+	margin: 0;
+	border: 0;
+	margin-bottom: 2.4rem;
+	border-bottom: 2px solid #000;
+}
+
+h3 {
+	font-size: 3.125rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-family: Roboto Condensed, sans-serif, cursive;
+	text-transform: uppercase;
+}
+
+.artwork p {
+	font-size: 0.9rem;
+}
+
+/*------------------------------------------------------------------- Contact */
+
+#contact {
+	background-color: #FFCCCC; 	
+}
+
+#contact h3 {
+	margin-left: 0rem;
+}
+
+#contact p {
+	text-align: center;
+}
+
+.socialmedia {
+	width: 200px;
+	position: absolute;
+}
+
+.socialmedia li {	
+	display:inline;
+}
+
+.socialmedia img {
+	width: 3rem;
+	margin-right: 1rem;
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+/* ------------------------------------------ Footer */
+
+.bottom {
+	background-color: #000;
+	text-align: center;
+}
+
+.bottom a {
+	color: #FFF;
+	text-decoration: none;
+}	
