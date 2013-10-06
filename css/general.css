@@ -21,9 +21,7 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-img {
-	width: 100%;
-}
+
 
 em {
 	font-style: italic;
@@ -44,7 +42,7 @@ strong {
 }
 
 .logo {
-	width: 6rem;
+	width: 7rem;
 	margin: 0 auto;
 	position: relative;
 	display: block;
@@ -78,7 +76,7 @@ nav a {
 }
 
 .about {
-	margin-right: 10%;
+	margin-right: 20%;
 }
 
 /* --------------------------------------------------------------------- Content */
@@ -207,7 +205,7 @@ h3 {
 /*------------------------------------------------------------------- Contact */
 
 #contact {
-	background-color: #FFCCCC; 	
+	background-color: #CCCC; 	
 }
 
 #contact h3 {

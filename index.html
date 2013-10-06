@@ -11,35 +11,29 @@ layout: default
 </head>
 <body>
 
-<header class="masthead">
+<h1> projects </h1>
 
-	<div class="masthead-top">
-<header class="masthead baseline">
-	<a href="#top"><img src="img/logo.svg" alt="Logo" class="logo"></a>
-</div>
-		
-		
-		<nav>
+<ul>
+	{% for projects in site.pages %}
+		{% if dino.category == "project" %}
+			<li> {{dino.name}}</li>
+				<li>
+			<figure>
+			<img src="{{dino.thumb}}" alt="">
+			<figcaption>{{dino.name}}</figcaption>
+			</figure>
+			</li>
 			
-			<ul>
-				<li><a href="#home">Home</a></li> <!-- # indicates it will link to the ID with that name -->
-				<li class="about"><a href="#aboutme">About</a></li>
-				<li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		
-		</nav>
-		
-	<div class="wrapper">
-		<div id="home">
-			<h2 class="qoute baseline"> “Design is not the narrow application of formal skills, it is a way of thinking."</h2>
-		 </div> 
+		{% endif %}
+	{% endfor %}
+	
+	</ul>
 		 
 		 
 		
 	
-	<script src="portfolio.js"></script>
-	</body>
+	<script src="<div class="masthead-top">
+ody>
 	</head>
 	</html>
 
